@@ -727,8 +727,8 @@ transform: translate(-50%,-50%);
     margin-bottom: 15px;
     display: block;
 }
-.social_list li a .nav_fb {
-    color: #3b5999;
+.social_list li a .nav_git {
+    color: #000;
 }
 .social_list li a .nav_in {
     color: #0077b5;
