@@ -1831,7 +1831,7 @@ h3.education_place {
     -o-transition: all .3s ease;
     transition: all .3s ease;
 }
-h2.project_heading:after {
+/* h2.project_heading:after {
     content: "";
     position: absolute;
     background: rgb(255, 196, 84);
@@ -1841,7 +1841,7 @@ h2.project_heading:after {
     right: 0;
     margin: auto;
     bottom: 0;
-}
+} */
 .port_services_setions .port_services_box P {
     color: #777777;
     -webkit-transition: all .3s ease;
