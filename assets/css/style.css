@@ -1759,6 +1759,12 @@ h3.education_place {
 .experience_section .col-md-12:nth-child(6) .ex_leftside {
     background: #ff517e;
 }
+.experience_section .col-md-12:nth-child(7) .ex_leftside {
+    background: #673AB6;
+}
+.experience_section .col-md-12:nth-child(8) .ex_leftside {
+    background: #EE5857;
+}
 .experience_section .col-md-12:nth-child(2) .ex_leftside:after {
     border-left-color:#ffc454;
 }
@@ -1773,6 +1779,12 @@ h3.education_place {
 }
 .experience_section .col-md-12:nth-child(6) .ex_leftside:after {
     border-left-color:#ff517e;
+}
+.experience_section .col-md-12:nth-child(7) .ex_leftside:after {
+	border-right-color: #673AB6;
+}
+.experience_section .col-md-12:nth-child(8) .ex_leftside:after {
+    border-right-color:#EE5857;
 }
 
 /*================== 08 End Experience section css ==================  */
@@ -3215,6 +3227,27 @@ p.banner_pera {
     margin-bottom: 0;
 	float: right;
 }
+
+.experience_section .col-md-12:nth-child(7) .ex_leftside:after {
+    border-right-color: transparent;
+    border-bottom-color: #673AB6;
+}
+.experience_section .col-md-12:nth-child(7) .ex_leftside {
+    float: right;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+.experience_section .col-md-12:nth-child(8) .ex_leftside:after {
+    border-right-color: transparent;
+    border-bottom-color: #EE5857;
+}
+.experience_section .col-md-12:nth-child(8) .ex_leftside {
+    background: #EE5857;
+    margin-top: 15px;
+    margin-bottom: 0;
+	float: right;
+}
+
 .port_project_gallery .grid-item {
     width: 100%;
 }

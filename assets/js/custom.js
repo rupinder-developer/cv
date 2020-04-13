@@ -601,8 +601,8 @@ Assigned to: ThemeForest
 	/*------------------------------------------------------------------*/
 	//click to scroll
 	scroll_contact: function() {
-		if($('#redirect_contact').length > 0){
-			$('#redirect_contact').on('click', function() {
+		if($('.redirect_contact').length > 0){
+			$('.redirect_contact').on('click', function() {
 				$('html, body').animate({
 					scrollTop: $('#scroll_contact').offset().top
 				}, 2000);
