@@ -30,11 +30,10 @@ try {
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = htmlspecialchars($_POST['subject']);
-    $mail->Body    = htmlspecialchars($_POST['message']);
-    
+    $mail->Body    = nl2br($_POST['message']);
 
     $mail->send();
     echo 1;
 } catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    echo 0;
 }
