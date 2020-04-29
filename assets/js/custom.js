@@ -518,7 +518,7 @@ Assigned to: ThemeForest
     					formDetail.append('form_type' , _this.attr('data-type'));
 					$.ajax({
 						method : 'post',
-						url : 'ajax.php',
+						url : 'send_email.php',
 						data:formDetail,
 						cache:false,
 						contentType: false,
@@ -527,7 +527,7 @@ Assigned to: ThemeForest
 						if(resp == 1){
 							targetForm.find('input').val('');
 							targetForm.find('textarea').val('');
-							errroTarget.html('<p style="color:green;">Mail has been sent successfully.</p>');
+							errroTarget.html("<p style='color:green;'>Thank you for reaching out to me, I'll catch you as soon as possible.</p>");
 						}else{
 							errroTarget.html('<p style="color:red;">Something went wrong please try again latter.</p>');
 						}
