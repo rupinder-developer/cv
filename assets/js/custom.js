@@ -516,22 +516,29 @@ Assigned to: ThemeForest
 				if(check == 0){
 					var formDetail = new FormData(targetForm[0]);
     					formDetail.append('form_type' , _this.attr('data-type'));
-					$.ajax({
-						method : 'post',
-						url : 'send_email.php',
-						data:formDetail,
-						cache:false,
-						contentType: false,
-						processData: false
-					}).done(function(resp){
-						if(resp == 1){
-							targetForm.find('input').val('');
-							targetForm.find('textarea').val('');
-							errroTarget.html("<p style='color:green;'>Thank you for reaching out to me, I'll catch you as soon as possible.</p>");
-						}else{
-							errroTarget.html('<p style="color:red;">Something went wrong please try again latter.</p>');
-						}
-					});
+
+					window.open(`mailto:me@rupindersingh.com?subject=${formDetail.get('subject')}&body=${formDetail.get('message')}`);
+					
+					targetForm.find('input').val('');
+					targetForm.find('textarea').val('');
+					errroTarget.html("<p style='color:green;'>Thank you for reaching out to me, I'll catch you as soon as possible.</p>");
+					
+					// $.ajax({
+					// 	method : 'post',
+					// 	url : 'send_email.php',
+					// 	data:formDetail,
+					// 	cache:false,
+					// 	contentType: false,
+					// 	processData: false
+					// }).done(function(resp){
+					// 	if(resp == 1){
+					// 		targetForm.find('input').val('');
+					// 		targetForm.find('textarea').val('');
+					// 		errroTarget.html("<p style='color:green;'>Thank you for reaching out to me, I'll catch you as soon as possible.</p>");
+					// 	}else{
+					// 		errroTarget.html('<p style="color:red;">Something went wrong please try again latter.</p>');
+					// 	}
+					// });
 				}
 			});
 		}
